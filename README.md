@@ -42,9 +42,12 @@ All solutions follow:
 |---|---------|------------|----------|-----------|------|-------|
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | `Medium` | Backtracking | [Java](solutions/generate-parentheses/Solution.java) • [C++](solutions/generate-parentheses/solution.cpp) • [Python](solutions/generate-parentheses/solution.py) | $O(4^n / \sqrt{n})$ | $O(n)$ |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | `Medium` | Bit Manipulation | [Java](solutions/divide-two-integers/Solution.java) • [C++](solutions/divide-two-integers/solution.cpp) • [Python](solutions/divide-two-integers/solution.py) | $O(\log n)$ | $O(1)$ |
+| 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | `Hard` | Dynamic Programming / Stack | [Java](solutions/longest-valid-parentheses/Solution.java) • [C++](solutions/longest-valid-parentheses/solution.cpp) • [Python](solutions/longest-valid-parentheses/solution.py) | $O(N)$ | $O(1)$ |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | `Medium` | Arrays / Matrix | [Java](solutions/rotate-image/Solution.java) • [C++](solutions/rotate-image/solution.cpp) • [Python](solutions/rotate-image/solution.py) | $O(N^2)$ | $O(1)$ |
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | `Medium` | Linked List | [Java](solutions/rotate-list/Solution.java) • [C++](solutions/rotate-list/solution.cpp) • [Python](solutions/rotate-list/solution.py) | $O(N)$ | $O(1)$ |
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | `Medium` | Arrays (DNF) | [Java](solutions/sort-colors/Solution.java) • [C++](solutions/sort-colors/solution.cpp) • [Python](solutions/sort-colors/solution.py) | $O(N)$ | $O(1)$ |
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | `Easy` | Arrays / Two Pointers | [Java](solutions/merge-sorted-array/Solution.java) • [C++](solutions/merge-sorted-array/solution.cpp) • [Python](solutions/merge-sorted-array/solution.py) | $O(M + N)$ | $O(1)$ |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | `Easy` | Arrays / DP | [Java](solutions/best-time-to-buy-and-sell-stock/Solution.java) • [C++](solutions/best-time-to-buy-and-sell-stock/solution.cpp) • [Python](solutions/best-time-to-buy-and-sell-stock/solution.py) | $O(N)$ | $O(1)$ |
 
 *Continuously updated with fresh multi-language solutions and daily streak milestones.*
 
