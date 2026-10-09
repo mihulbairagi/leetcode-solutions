@@ -52,6 +52,7 @@ All solutions follow:
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | `Easy` | Arrays / DP | [Java](solutions/best-time-to-buy-and-sell-stock/Solution.java) • [C++](solutions/best-time-to-buy-and-sell-stock/solution.cpp) • [Python](solutions/best-time-to-buy-and-sell-stock/solution.py) | $O(N)$ | $O(1)$ |
 | 775 | [Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions/) | `Medium` | Array / Math | [Java](solutions/global-and-local-inversions/Solution.java) • [C++](solutions/global-and-local-inversions/solution.cpp) • [Python](solutions/global-and-local-inversions/solution.py) | $O(N)$ | $O(1)$ |
 | 1021 | [Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/) | `Easy` | String / Stack | [Java](solutions/remove-outermost-parentheses/Solution.java) • [C++](solutions/remove-outermost-parentheses/solution.cpp) • [Python](solutions/remove-outermost-parentheses/solution.py) | $O(N)$ | $O(N)$ |
+| 1541 | [Minimum Insertions to Balance a Parentheses String](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | `Medium` | String / Stack | [Java](solutions/minimum-insertions-to-balance-a-parentheses-string/Solution.java) • [C++](solutions/minimum-insertions-to-balance-a-parentheses-string/solution.cpp) • [Python](solutions/minimum-insertions-to-balance-a-parentheses-string/solution.py) | $O(N)$ | $O(1)$ |
 
 *Continuously updated with fresh multi-language solutions and daily streak milestones.*
 
