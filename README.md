@@ -40,6 +40,7 @@ All solutions follow:
 
 | # | Problem | Difficulty | Category | Solutions | Time | Space |
 |---|---------|------------|----------|-----------|------|-------|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | `Easy` | Array / Hash Table | [Java](solutions/two-sum/Solution.java) • [C++](solutions/two-sum/solution.cpp) • [Python](solutions/two-sum/solution.py) | $O(N)$ | $O(N)$ |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | `Medium` | Backtracking | [Java](solutions/generate-parentheses/Solution.java) • [C++](solutions/generate-parentheses/solution.cpp) • [Python](solutions/generate-parentheses/solution.py) | $O(4^n / \sqrt{n})$ | $O(n)$ |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | `Medium` | Bit Manipulation | [Java](solutions/divide-two-integers/Solution.java) • [C++](solutions/divide-two-integers/solution.cpp) • [Python](solutions/divide-two-integers/solution.py) | $O(\log n)$ | $O(1)$ |
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | `Hard` | Dynamic Programming / Stack | [Java](solutions/longest-valid-parentheses/Solution.java) • [C++](solutions/longest-valid-parentheses/solution.cpp) • [Python](solutions/longest-valid-parentheses/solution.py) | $O(N)$ | $O(1)$ |
