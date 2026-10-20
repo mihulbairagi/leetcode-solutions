@@ -74,6 +74,7 @@ All solutions follow:
 | 3551 | [Minimum Swaps to Sort by Digit Sum](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/) | `Medium` | Array / Hash Table | [Java](solutions/minimum-swaps-to-sort-by-digit-sum/Solution.java) • [C++](solutions/minimum-swaps-to-sort-by-digit-sum/solution.cpp) • [Python](solutions/minimum-swaps-to-sort-by-digit-sum/solution.py) | $O(N \log N)$ | $O(N)$ |
 | 3723 | [Maximize Sum of Squares of Digits](https://leetcode.com/problems/maximize-sum-of-squares-of-digits/) | `Medium` | Math / Greedy | [Java](solutions/maximize-sum-of-squares-of-digits/Solution.java) • [C++](solutions/maximize-sum-of-squares-of-digits/solution.cpp) • [Python](solutions/maximize-sum-of-squares-of-digits/solution.py) | $O(N \cdot D)$ | $O(N)$ |
 | 3727 | [Maximum Alternating Sum of Squares](https://leetcode.com/problems/maximum-alternating-sum-of-squares/) | `Medium` | Array / Greedy | [Java](solutions/maximum-alternating-sum-of-squares/Solution.java) • [C++](solutions/maximum-alternating-sum-of-squares/solution.cpp) • [Python](solutions/maximum-alternating-sum-of-squares/solution.py) | $O(N \log N)$ | $O(N)$ |
+| 3886 | [Sum of Sortable Integers](https://leetcode.com/problems/sum-of-sortable-integers/) | `Hard` | Array / Math | [Java](solutions/sum-of-sortable-integers/Solution.java) • [C++](solutions/sum-of-sortable-integers/solution.cpp) • [Python](solutions/sum-of-sortable-integers/solution.py) | $O(N \sqrt{N})$ | $O(N)$ |
 
 *Continuously updated with fresh multi-language solutions and daily streak milestones.*
 
