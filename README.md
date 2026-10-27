@@ -81,6 +81,7 @@ All solutions follow:
 | 3723 | [Maximize Sum of Squares of Digits](https://leetcode.com/problems/maximize-sum-of-squares-of-digits/) | `Medium` | Math / Greedy | [Java](solutions/maximize-sum-of-squares-of-digits/Solution.java) • [C++](solutions/maximize-sum-of-squares-of-digits/solution.cpp) • [Python](solutions/maximize-sum-of-squares-of-digits/solution.py) | $O(N \cdot D)$ | $O(N)$ |
 | 3727 | [Maximum Alternating Sum of Squares](https://leetcode.com/problems/maximum-alternating-sum-of-squares/) | `Medium` | Array / Greedy | [Java](solutions/maximum-alternating-sum-of-squares/Solution.java) • [C++](solutions/maximum-alternating-sum-of-squares/solution.cpp) • [Python](solutions/maximum-alternating-sum-of-squares/solution.py) | $O(N \log N)$ | $O(N)$ |
 | 3886 | [Sum of Sortable Integers](https://leetcode.com/problems/sum-of-sortable-integers/) | `Hard` | Array / Math | [Java](solutions/sum-of-sortable-integers/Solution.java) • [C++](solutions/sum-of-sortable-integers/solution.cpp) • [Python](solutions/sum-of-sortable-integers/solution.py) | $O(N \sqrt{N})$ | $O(N)$ |
+| 3963 | [Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/) | `Easy` | Algorithms | [Java](solutions/create-grid-with-exactly-one-path/Solution.java) • [C++](solutions/create-grid-with-exactly-one-path/solution.cpp) • [Python](solutions/create-grid-with-exactly-one-path/solution.py) | $O(m \cdot n)$ | $O(m \cdot n)$ |
 
 *Continuously updated with fresh multi-language solutions and daily streak milestones.*
 
