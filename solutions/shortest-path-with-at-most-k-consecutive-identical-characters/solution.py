@@ -6,35 +6,36 @@ class Solution:
         for u, v, w in edges:
             adj[u].append((v, w))
 
-        dist = [[float('inf')] * (k + 1) for _ in range(n)]
+        dist = [[([float('inf')] * 26) for _ in range(k + 1)] for _ in range(n)]
+        
+        pq = []
 
-        pq = [(0, 0, 1)] 
-        dist[0][1] = 0
-
-        min_final_cost = float('inf')
+        start_char_index = ord(labels[0]) - ord('a')
+        dist[0][0][start_char_index] = 0
+        heapq.heappush(pq, (0, 0, 0, start_char_index)) # (cost, node, consecutive_count, last_char_index)
 
         while pq:
-            d, u, u_count = heapq.heappop(pq)
+            cost, u, consecutive, last_char_index = heapq.heappop(pq)
 
-            if d > dist[u][u_count]:
+            if cost > dist[u][consecutive][last_char_index]:
                 continue
-
-            if u == n - 1:
-                min_final_cost = min(min_final_cost, d)
             
-            u_char = labels[u]
+            if u == n - 1:
+                return cost
 
             for v, weight in adj[u]:
-                v_char = labels[v]
-
-                if v_char == u_char:
-                    v_count = u_count + 1
-                else:
-                    v_count = 1
+                current_char_index = ord(labels[v]) - ord('a')
                 
-                if v_count <= k:
-                    if d + weight < dist[v][v_count]:
-                        dist[v][v_count] = d + weight
-                        heapq.heappush(pq, (d + weight, v, v_count))
+                new_consecutive = 0
+                if current_char_index == last_char_index:
+                    new_consecutive = consecutive + 1
+                else:
+                    new_consecutive = 0
+
+                if new_consecutive <= k:
+                    new_cost = cost + weight
+                    if new_cost < dist[v][new_consecutive][current_char_index]:
+                        dist[v][new_consecutive][current_char_index] = new_cost
+                        heapq.heappush(pq, (new_cost, v, new_consecutive, current_char_index))
         
-        return int(min_final_cost) if min_final_cost != float('inf') else -1
+        return -1
