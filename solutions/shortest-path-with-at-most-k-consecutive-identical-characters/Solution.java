@@ -1,54 +1,54 @@
 import java.util.*;
 class Solution {
     public int shortestPath(int n, int[][] edges, String labels, int k) {
-        List<int[]>[] adj = new ArrayList[n];
+        List<List<int[]>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            adj[i] = new ArrayList<>();
+            adj.add(new ArrayList<>());
         }
         for (int[] edge : edges) {
-            int u = edge[0];
-            int v = edge[1];
-            int w = edge[2];
-            adj[u].add(new int[]{v, w});
+            adj.get(edge[0]).add(new int[]{edge[1], edge[2]});
         }
-        long[][] dist = new long[n][k + 1];
+        int[][][] dist = new int[n][k + 1][26];
         for (int i = 0; i < n; i++) {
-            Arrays.fill(dist[i], Long.MAX_VALUE);
+            for (int j = 0; j <= k; j++) {
+                Arrays.fill(dist[i][j], Integer.MAX_VALUE);
+            }
         }
-        PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0]));
-        dist[0][1] = 0;
-        pq.offer(new long[]{0, 0, 1});
-        long minFinalCost = Long.MAX_VALUE;
+        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a[0]));
+        int startCharIndex = labels.charAt(0) - 'a';
+        dist[0][0][startCharIndex] = 0;
+        pq.offer(new int[]{0, 0, 0, startCharIndex});
         while (!pq.isEmpty()) {
-            long[] current = pq.poll();
-            long d = current[0];
-            int u = (int) current[1];
-            int uCount = (int) current[2];
-            if (d > dist[u][uCount]) {
+            int[] current = pq.poll();
+            int cost = current[0];
+            int u = current[1];
+            int consecutive = current[2];
+            int lastCharIndex = current[3];
+            if (cost > dist[u][consecutive][lastCharIndex]) {
                 continue;
             }
             if (u == n - 1) {
-                minFinalCost = Math.min(minFinalCost, d);
+                return cost;
             }
-            char uChar = labels.charAt(u);
-            for (int[] edge : adj[u]) {
-                int v = edge[0];
-                int weight = edge[1];
-                char vChar = labels.charAt(v);
-                int vCount;
-                if (vChar == uChar) {
-                    vCount = uCount + 1;
+            for (int[] neighborInfo : adj.get(u)) {
+                int v = neighborInfo[0];
+                int weight = neighborInfo[1];
+                int currentCharIndex = labels.charAt(v) - 'a';
+                int newConsecutive = 0;
+                if (currentCharIndex == lastCharIndex) {
+                    newConsecutive = consecutive + 1;
                 } else {
-                    vCount = 1;
+                    newConsecutive = 0;
                 }
-                if (vCount <= k) {
-                    if (d + weight < dist[v][vCount]) {
-                        dist[v][vCount] = d + weight;
-                        pq.offer(new long[]{d + weight, v, vCount});
+                if (newConsecutive <= k) {
+                    int newCost = cost + weight;
+                    if (newCost < dist[v][newConsecutive][currentCharIndex]) {
+                        dist[v][newConsecutive][currentCharIndex] = newCost;
+                        pq.offer(new int[]{newCost, v, newConsecutive, currentCharIndex});
                     }
                 }
             }
         }
-        return (minFinalCost == Long.MAX_VALUE) ? -1 : (int) minFinalCost;
+        return -1;
     }
 }
